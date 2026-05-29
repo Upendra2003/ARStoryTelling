@@ -8,7 +8,6 @@ import time
 SERVICE_ROOT = Path(__file__).resolve().parent
 TRIPOSR = SERVICE_ROOT / "TripoSR"
 
-
 def convert_obj_to_glb(obj_path: Path, glb_path: Path):
     import trimesh
     mesh = trimesh.load(obj_path, force="mesh")
